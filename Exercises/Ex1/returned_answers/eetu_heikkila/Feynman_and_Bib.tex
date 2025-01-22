@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{graphicx} 
+\usepackage{feynmp-auto} 
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+\title{Feynman Diagram Example}
+\author{Eetu Heikkilä}
+\date{January 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Feynman Diagrams}
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.49\linewidth}
+        \centering
+        \begin{fmffile}{diagram2}
+            \begin{fmfgraph*}(100,70) 
+                \fmfleft{i1,i2}
+                \fmfright{o1,o2}
+                \fmf{fermion,tension=2}{i1,v1}
+                \fmf{photon}{v1,o1}
+                \fmf{fermion,tension=0.5}{v2,i2}
+                \fmf{photon}{v2,o2}
+                \fmf{fermion}{v1,v2}
+                \fmflabel{$\gamma$}{o1}
+                \fmflabel{$\gamma$}{o2}
+                \fmflabel{$e^-$}{i1}
+                \fmflabel{$e^+$}{i2}
+            \end{fmfgraph*}
+        \end{fmffile}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.49\linewidth}
+        \centering
+        \begin{fmffile}{diagram1}
+            \begin{fmfgraph*}(100,70)
+                \fmfleft{i1,i2}
+                \fmfright{o1,o2}
+                \fmf{fermion,tension=0.5}{i1,v1}
+                \fmf{photon}{v1,o1} 
+                \fmf{fermion,tension=2}{i2,v2} 
+                \fmf{photon}{v2,o2}
+                \fmf{fermion}{v1,v2} 
+                \fmflabel{$\gamma$}{o1}
+                \fmflabel{$\gamma$}{o2}
+                \fmflabel{$e^+$}{i2}
+                \fmflabel{$e^-$}{i1}
+            \end{fmfgraph*}
+        \end{fmffile}
+    \end{minipage}
+    \vspace{1cm}
+    \caption{Feynman graphs for the lowest order contributions to electron-positron annihilation \cite{dirac}.}
+    \label{fig:electron_positron_annihilation}
+\end{figure}
+
+We were not given a source. The homework file just has a [?], so I am just citing some quantum mechanics book. I also cannot access the \texttt{.sty} file given in the lecture notes, so it's using whatever the default citation style is for \texttt{biblatex}.
+
+
+\printbibliography
+
+
+\end{document}
