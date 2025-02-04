@@ -12,8 +12,8 @@ https://www.tutorialspoint.com/gitlab/gitlab_fork_project.htm
 
 Clone your repo
 ```
-git clone https://gitlab.cern.ch/<your-gitlab-username>/CompInHEP2024
-cd CompInHEP2024/Ex1
+git clone https://gitlab.cern.ch/<your-gitlab-username>/CompInHEP2025
+cd CompInHEP2025/Ex1
 create dir <yourname>
 add your answers, files, subdirs (but not any data)
 commit
