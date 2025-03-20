@@ -1,0 +1,4 @@
+HiggsSM:all = on
+Print:quiet = on
+PDF:pSet = 8
+Main:numberOfEvents = 1000
