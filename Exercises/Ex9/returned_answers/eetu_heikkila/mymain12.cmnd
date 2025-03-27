@@ -1,0 +1,5 @@
+Print:quiet = on
+Main:numberOfEvents = 1000
+SoftQCD:nonDiffractive = on
+Beams:eCM = 13600
+
