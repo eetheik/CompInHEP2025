@@ -1,0 +1,31 @@
+In this project we simulate and analyze a hypothetical variant of the Z 
+boson which has weaker couplings, making it more difficul to distinguish from 
+background processes. The code is structured into two `.cc` files which simulate
+the signal and background processes. Included is also a `.py` file for analyzing 
+the root files created during the simulation.
+
+Due to the relatively small size of this project it was chosen not to separate into 
+smaller subdirectories.
+
+Dependencies:
+- ROOT
+- PYTHIA (installed in Makefile)
+- Python3 (NumPy)
+
+Run the simulation codes with:
+
+`make run`
+
+And then the analysis code with:
+
+`python3 analyze.py`
+
+We simulate 1,000,000 events for signal and 3,000,000 events for 
+background to ensure a statistically meaningful analysis after 
+applying strict kinematic cuts and isolation criteria. 
+For rare processes and to estimate the shape of the invariant 
+mass distribution reliably in both signal and background, 
+at least 10⁵ – 10⁶ events are often needed. This also allows 
+us to determine the trigger efficiency with reasonable 
+precision.
+
